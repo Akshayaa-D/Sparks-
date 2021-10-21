@@ -1,0 +1,177 @@
+
+
+      /* bolt */
+    span{
+        height:10px;
+        margin-top:10px;
+        margin-left:350px;
+    }
+    
+      .lbn{
+        margin-right:300px;
+    } 
+    
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .bolt-header{
+    position: absolute;;
+    left:0px;
+    right:0px;
+    margin-top:0px;
+    width:100%;
+    height:10%;
+    background-color:white;
+    }
+    
+    
+    .logo-text{
+    color:black;
+    display:block;
+    font-family:'Courier New', Courier, monospace;
+    }
+    
+    .nav{
+        background-color:rgb(143, 140, 140) ;
+        width:1500px;
+    }
+    
+    .navclass{
+    float:left;
+    margin-right:20px;
+    height:50%;
+    
+    /* font-family:'Courier New', Courier, monospace; */
+    }
+    
+    
+    .navclass a{
+    color:black;
+    font-size:15px;
+    padding-right:17px;
+    padding-top:0%;
+    font-family:garamond;
+    display:inline-block;
+    text-decoration:none;
+    }
+    
+    .alert {
+        width:30%;    
+     }
+
+    .navclass a:hover{
+        color:black;
+    }
+    
+    .textimg{
+        text-align:center;
+        margin-top:0px;
+    }
+    body {
+    font-family: "Lato", sans-serif;
+    }
+    
+    .bg1{
+        margin-top: 0px;
+        margin-left:10px;
+        height:500px;
+        width:100%;
+    }
+    .image1{
+        position: relative;
+        margin-top:20px;
+        margin-left:250px;
+        width:100px;
+        height:50px
+    }
+    
+    
+    .image{
+    height:100px;
+    margin-left: 30px;
+    }
+
+    
+    .text{
+        margin-left:25px;
+        font-family:Garamond;
+        color:black;  
+        opacity:1;
+    }
+    
+    
+    .image1{
+    height:60px;
+    margin-top:15px;
+    margin-left:10px;
+    }
+    
+    .about{
+        text-align:center;
+        font-family:garamond;
+        color:black;
+    }
+
+    #message{
+        height: 100px;
+    }
+    
+    .aboutimg{
+        height:350px;
+        width:600px;
+        margin-top:0px;
+        margin-left:15px;
+    }
+    
+    footer{
+        background-color:rgb(143, 140, 140);
+        text-align:center;
+    }
+    
+    
+    .footer2 a{
+        color:white;
+    }
+    .award11{
+        color:black;
+        font-family:Garamond;
+        font-size:10px;
+    }
+    
+    .bg{
+    
+        position: relative;
+    }
+
+    .first-txt {
+        position: absolute;
+        top:250px;
+        left:470px;
+        color:white;
+        font-size:14px;
+        font:italic
+    } 
+
+      /* Control the left side */
+    .row{
+        box-sizing: border-box;
+    }
+      
+      /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width:50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
+      
+      /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    

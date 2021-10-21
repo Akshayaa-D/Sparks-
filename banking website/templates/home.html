@@ -1,0 +1,77 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>BankHomePage</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../static/css/bank.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <header class="bolt-header">
+      <div class="nav">
+        <nav class="navclass">
+          <a href="{{url_for('ViewCustomer')}}"style="font-size:20px ;margin-left:0px;margin-top:30px" class="top">&nbspView Customers</a>
+          <a href="{{url_for('transfer')}}"style="font-size:20px;margin-left:0px" class="top">&nbspTransfer Money</a>
+          <a href="{{url_for('ViewTransaction')}}"style="font-size:20px;margin-left:00px" class="top">&nbspHistory</a>
+           <a href="#about1"style="font-size:20px ;margin-left:0px;margin-top:30px" class="top">&nbspContact</a>
+          <a href="#about2"style="font-size:20px;margin-left:0px" class="top">&nbspAbout</a>
+          <a href="{{url_for('Home')}}"style="font-size:20px;margin-left:00px" class="top">&nbspHome</a>
+        </nav>
+        <span class="fas fa-university fa-2px">&nbspSPARKS BANK<br> <br><i>YOUR MONEY MATTERS</i> </span>
+
+      </div>
+        <br><br><br>
+      <div class="bg">
+        <img src="{{url_for('static',filename='background-layer.png')}}" class="bg1"alt="background image">
+          <div class="textimg">
+          </div>
+      </div>
+      <br> 
+      <hr>
+      <br>
+      <h2 class="about" id="about2"style="margin-top:20px;"><b>ABOUT US</b></h2>
+      <div class="row" style="height:500px; margin-left:0px">
+        <div class="column left">
+         
+    <br>
+    <p><img src="{{url_for('static',filename='about.jpg')}}" class="aboutimg" style="margin-left:0px;margin-top:0px;height:400px"></p>
+        </div>
+        <div class="column right">
+          <br><br><br>
+          <p><i>CUSTOMER <br>To view all customer details their account no,name,email,balance<br><br>TRANSACTION<br>To view all the transactions took place between the customers<br><br>HISTORY<br>To view the number of transactions made so far</i></p>
+        </div>
+      </div>
+      <hr>
+      
+      <h2 class="about" id="about1"style="margin-top:20px;"><b>CONTACT US</b></h2>
+      
+      <form class="form" action="{{ url_for('Contact') }}" method="post" style="margin-left: 540px;">
+        {% with messages = get_flashed_messages() %}  
+          {% if messages %}  
+                {% for message in messages %}  
+                <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  <strong> {{ message }} </strong> 
+                </div>
+                {% endfor %}  
+            {% endif %}  
+          {% endwith %}
+        <h7>EMAIL:</h7>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" placeholder="email"><br><br>
+        <h7>NAME:</h7>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="name"><br><br>
+        <h7>SUBJECT:</h7>&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="subject"><br><br>
+        <h7>MESSAGE:</h7>&nbsp&nbsp<input type="text" placeholder="message" id="meassage"><br><br>
+        <button type="submit" id="btnsubmit" class="btn btn-dark"style="margin-left:65px" > SUBMIT</button>
+      </form>
+      <footer id="contact">
+        <br>
+        <p style="color:white">CUSTOMER | HISTORY |TRANSACTION<br>CONTACT US &nbsp sparks@gmail.com |0422-098765 |www.sparks.com </p>
+
+      </footer>
+   
+    </body>
+  <html>
